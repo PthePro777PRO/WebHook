@@ -8,7 +8,7 @@ lastrequest = ""
 def index():
     return lastrequest
 
-@app.route('/dorequest/<request>')
+@app.route('/dorequest?<request>')
 def dorq(request):
     global lastrequest
     lastrequest=request
